@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+<link href="assets/style.css" ref="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+<style>
+header{
+text-align:center;
+background:url("http://i.imgur.com/o3EzYe3.jpg");
+background-size:cover;
+background-position: static;
+position: relative;
+margin: -50px 0 0 0;
+}
+body {
+font-family: helvetica, sans-serif;
+margin: 0 auto;
+background: #ff3d5a;
+}
+
+
+div {
+text-align:center;
+max-width: 700px;
+height: 300px;
+background-size: cover;
+background-position: center;
+position: relative;
+margin: 40px 0px 0 350px;
+border-radius: 10px;
+}
+h1 {
+font-family: 'Frijole', cursive;
+
+font-size: 75px;
+color:white;
+
+}
+h2 {
+ font-family: 'Handlee', cursive;
+padding:0 10 0 10 ;
+color: pink;
+margin: -60px 0 70px;
+}
+p {
+color: rgba(255,255,255,1);
+background: black;
+background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.3));
+background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.3));
+background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.3));
+padding: 10px;
+line-height: 28px;
+text-align: justify;
+position: absolute;
+bottom: 0;
+margin: 0;
+height: 30px;
+transition: height .5s;
+-webkit-transition: height .5s;
+-moz-transition: height .5s;
+}
+
+small {
+opacity: 0;
+}
+li{
+display:inline;
+padding: 0 30px 0 30px;
+}
+a{
+  text-decoration:none;
+
+  color: white;}
+a:hover{
+  color:red;}
+.show-description p {
+height: 120px;
+  }
+
+  .show-description small {
+    opacity: 1;
+  }
+footer{
+padding: 20 0 10 0;
+color:white;
+}
+
+
+.eye-liner{
+background-image: url("http://i.imgur.com/nqiZDrm.jpg");
+
+}
+.face{
+background-image: url("http://i.imgur.com/6036pmY.jpg");
+
+}
+.lips{
+background-image: url("http://i.imgur.com/cAxDniz.jpg");
+}
+.nails{
+background-image: url("http://i.imgur.com/sexypmY.jpg");}
+.price {
+float: right;
+}
+@media (max-width: 600px) {
+header{
+  margin-bottom: 50;}
+h1 {
+  font-size: 50px;
+
+  line-height: 40px;
+}
+h2 {
+  font-size: 20px;
+  margin: 1px 0 30px 0;
+}
+li{
+padding:2px;
+  display:block;}
+
+div {
+  margin: 20px 12px 0 12px;
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+border-radius:5;
+}
+small {
+
+  font-size: 12px;
+}
+}
+</style>
+
+</head>
+
+<body><header>
+  <h1>Lakme Makeup Store</h1>
+  <h2>explosion of colors to your daily  makeup routine</h2>
+<hr>  <ul>
+  <li><a href="">Home</a></li>
+  <li><a href="">Eyes</a></li>
+  <li><a href="">Lips</a></li>
+  <li><a href="">Face</a></li>
+  <li><a href="">Nails</a></li>
+</ul><hr>
+</header>
+
+  <div class="eye-liner">
+  <p>Lakme 9to5 Black Impact Liner <span class="price">&#8377  225</span><br><small>
+This rich and intense black liner lasts long with its silky, water-resistant &amp; fast drying formula, giving your eyes a bold and dark impact to make a lasting impression.
+The long handle offers a comfortable grip so you can create dark &amp; dramatic eyes to glam things up.</small> </p>
+  </div>
+  <div class="face">
+  <p>  Lakme 9to5 Pure Rouge Blusher
+<span class="price">&#8377  475</span><br><small>
+The perfect blend of naturally enhanced shades &amp; color, Lakme 9to5 Pure Rouge Blusher builds soft layers to give your cheeks the ultimate coverage.
+It is sheer and light weight in application with color that blends naturally on all Indian skin tones.
+</small></p></div>
+
+  <div class="lips">
+    <p>Lakme 9to5 Matte Lipcolor <span class="price">&#8377  338</span><br>
+      <small>
+Lakme 9to5 brings you a range of 15 high performance shades that sit on your lips all day long.
+Enriched with Vitamin E; the formula conditions your lips &amp; softens them with wheat germ oil.
+Add some elegance and achieve smooth lips with a touch of matte.</small>
+</p>
+  </div>
+  <div class="nails">
+    <p>Lakme Absolute Gel Stylist <span class="price">&#8377  300</span><br><small>
+  This season is all about Illuminating, so don’t let your nails feel left out!
+  A brand new range of 10 scintillating shimmer-laden shades of nail color, Lakmé Absolute Gel Stylist gives your nails a lustrous texture and finish.
+   A precious look for every occasion!
+</small>
+</p>
+</div>
+
+
+
+
+
+<footer>
+<hr>
+Copyright 2017 | All Rights Reserved
+</footer>
+<script>
+$('div').on('click', function() {
+$(this).toggleClass('show-description');
+});
+</script>
+
+
+</body></html>
